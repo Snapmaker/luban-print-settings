@@ -1,0 +1,15 @@
+{
+  "name": "@snapmaker/luban-print-settings",
+  "version": "1.0.0",
+  "description": "Print settings for 3D printing, laser and CNC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snapmaker/luban-print-settings.git"
+  },
+  "author": "Snapmaker",
+  "license": "AGPL-3.0-or-later"
+}
