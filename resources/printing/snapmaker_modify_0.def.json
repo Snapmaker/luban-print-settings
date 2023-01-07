@@ -3704,7 +3704,7 @@
                         "support_pattern": {
                             "label": "Support Pattern",
                             "description": "The pattern of the support structures of the print. The different options available result in sturdy or easy to remove support.",
-                            "type": "enum",
+                            "type": "enumWithImage",
                             "options": {
                                 "lines": "Lines",
                                 "grid": "Grid",
