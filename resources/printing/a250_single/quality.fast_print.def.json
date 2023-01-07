@@ -273,7 +273,7 @@
             "default_value": "[135]"
         },
         "support_brim_enable": {
-            "default_value": false
+            "default_value": true
         },
         "support_brim_width": {
             "default_value": 8
