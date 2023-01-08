@@ -564,7 +564,7 @@
             "default_value": true
         },
         "infill_before_walls": {
-            "default_value": true
+            "default_value": false
         },
         "ironing_enabled": {
             "default_value": false

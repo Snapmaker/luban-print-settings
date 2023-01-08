@@ -1,5 +1,5 @@
 {
-    "version": "4.5.0-beta.5",
+    "version": "4.5.0-beta.9",
     "name": "Precise & Strong",
     "category": "Default",
     "i18nName": "key-default_name-Precise & Strong",
@@ -140,42 +140,6 @@
         "acceleration_travel": {
             "default_value": 2000
         },
-        "jerk_enabled": {
-            "default_value": false
-        },
-        "jerk_print": {
-            "default_value": 20
-        },
-        "jerk_infill": {
-            "default_value": 20
-        },
-        "jerk_wall_0": {
-            "default_value": 20
-        },
-        "jerk_wall_x": {
-            "default_value": 20
-        },
-        "jerk_topbottom": {
-            "default_value": 20
-        },
-        "jerk_roofing": {
-            "default_value": 20
-        },
-        "jerk_support_infill": {
-            "default_value": 20
-        },
-        "jerk_support_roof": {
-            "default_value": 20
-        },
-        "jerk_support_bottom": {
-            "default_value": 20
-        },
-        "jerk_prime_tower": {
-            "default_value": 20
-        },
-        "jerk_travel": {
-            "default_value": 20
-        },
         "model_structure_type": {
             "default_value": "normal"
         },
@@ -249,7 +213,7 @@
             "default_value": false
         },
         "support_generate_type": {
-            "default_value": "none"
+            "default_value": "normal"
         },
         "support_tree_angle": {
             "default_value": 40
@@ -267,7 +231,7 @@
             "default_value": 0.2
         },
         "support_enable": {
-            "default_value": false
+            "default_value": true
         },
         "support_structure": {
             "default_value": "normal"
@@ -292,96 +256,6 @@
         },
         "support_initial_layer_line_distance": {
             "default_value": 2.667
-        },
-        "support_infill_angles": {
-            "default_value": "[135]"
-        },
-        "support_brim_enable": {
-            "default_value": true
-        },
-        "support_brim_width": {
-            "default_value": 8
-        },
-        "support_brim_line_count": {
-            "default_value": 14
-        },
-        "support_offset": {
-            "default_value": 0
-        },
-        "support_interface_enable": {
-            "default_value": false
-        },
-        "support_roof_enable": {
-            "default_value": false
-        },
-        "support_bottom_enable": {
-            "default_value": false
-        },
-        "support_interface_height": {
-            "default_value": 0.6
-        },
-        "support_roof_height": {
-            "default_value": 0.6
-        },
-        "support_bottom_height": {
-            "default_value": 0.6
-        },
-        "support_interface_skip_height": {
-            "default_value": 0.3
-        },
-        "support_interface_density": {
-            "default_value": 70
-        },
-        "support_roof_line_distance": {
-            "default_value": 0.571
-        },
-        "support_bottom_line_distance": {
-            "default_value": 0.4
-        },
-        "support_interface_pattern": {
-            "default_value": "zigzag"
-        },
-        "support_roof_pattern": {
-            "default_value": "zigzag"
-        },
-        "support_bottom_pattern": {
-            "default_value": "zigzag"
-        },
-        "support_interface_offset": {
-            "default_value": 0
-        },
-        "support_roof_offset": {
-            "default_value": 0
-        },
-        "support_bottom_offset": {
-            "default_value": 0
-        },
-        "support_interface_angles": {
-            "default_value": "[45]"
-        },
-        "support_fan_enable": {
-            "default_value": false
-        },
-        "support_supported_skin_fan_speed": {
-            "default_value": 100
-        },
-        "gradual_support_infill_steps": {
-            "default_value": 0
-        },
-        "gradual_support_infill_step_height": {
-            "default_value": 1
-        },
-        "support_use_towers": {
-            "default_value": true
-        },
-        "support_tower_diameter": {
-            "default_value": 3
-        },
-        "support_tower_maximum_supported_diameter": {
-            "default_value": 3
-        },
-        "support_tower_roof_angle": {
-            "default_value": 65
         },
         "support_type": {
             "default_value": "everywhere"
@@ -429,10 +303,100 @@
             "default_value": 20
         },
         "minimum_roof_area": {
-            "default_value": 20
+            "default_value": 4
         },
         "minimum_bottom_area": {
             "default_value": 20
+        },
+        "support_interface_enable": {
+            "default_value": true
+        },
+        "support_roof_enable": {
+            "default_value": true
+        },
+        "support_bottom_enable": {
+            "default_value": false
+        },
+        "support_interface_height": {
+            "default_value": 0.6
+        },
+        "support_roof_height": {
+            "default_value": 2
+        },
+        "support_bottom_height": {
+            "default_value": 0.6
+        },
+        "support_interface_skip_height": {
+            "default_value": 0.3
+        },
+        "support_interface_density": {
+            "default_value": 70
+        },
+        "support_roof_line_distance": {
+            "default_value": 0.571
+        },
+        "support_bottom_line_distance": {
+            "default_value": 0.4
+        },
+        "support_interface_pattern": {
+            "default_value": "zigzag"
+        },
+        "support_roof_pattern": {
+            "default_value": "zigzag"
+        },
+        "support_bottom_pattern": {
+            "default_value": "zigzag"
+        },
+        "support_interface_offset": {
+            "default_value": 0
+        },
+        "support_roof_offset": {
+            "default_value": 2
+        },
+        "support_bottom_offset": {
+            "default_value": 0
+        },
+        "support_interface_angles": {
+            "default_value": "[45]"
+        },
+        "support_offset": {
+            "default_value": 0
+        },
+        "support_use_towers": {
+            "default_value": true
+        },
+        "support_tower_diameter": {
+            "default_value": 3
+        },
+        "support_tower_maximum_supported_diameter": {
+            "default_value": 3
+        },
+        "support_tower_roof_angle": {
+            "default_value": 65
+        },
+        "support_brim_enable": {
+            "default_value": true
+        },
+        "support_brim_width": {
+            "default_value": 8
+        },
+        "support_brim_line_count": {
+            "default_value": 14
+        },
+        "support_fan_enable": {
+            "default_value": false
+        },
+        "support_supported_skin_fan_speed": {
+            "default_value": 100
+        },
+        "gradual_support_infill_steps": {
+            "default_value": 0
+        },
+        "gradual_support_infill_step_height": {
+            "default_value": 1
+        },
+        "support_infill_angles": {
+            "default_value": "[135]"
         },
         "adhesion_type": {
             "default_value": "skirt"
@@ -488,18 +452,6 @@
         "acceleration_skirt_brim": {
             "default_value": 1000
         },
-        "jerk_layer_0": {
-            "default_value": 20
-        },
-        "jerk_print_layer_0": {
-            "default_value": 20
-        },
-        "jerk_travel_layer_0": {
-            "default_value": 20
-        },
-        "jerk_skirt_brim": {
-            "default_value": 20
-        },
         "speed_slowdown_layers": {
             "default_value": 2
         },
@@ -543,7 +495,7 @@
             "default_value": "back"
         },
         "z_seam_x": {
-            "default_value": 100
+            "default_value": 50
         },
         "z_seam_y": {
             "default_value": 100
@@ -641,6 +593,33 @@
         "travel_avoid_distance": {
             "default_value": 0.625
         },
+        "infill_wipe_dist": {
+            "default_value": 0.1
+        },
+        "wall_0_wipe_dist": {
+            "default_value": 0.2
+        },
+        "skin_overlap": {
+            "default_value": 5
+        },
+        "skin_overlap_mm": {
+            "default_value": 0.02
+        },
+        "infill_overlap": {
+            "default_value": 10
+        },
+        "infill_overlap_mm": {
+            "default_value": 0.04
+        },
+        "xy_offset": {
+            "default_value": 0
+        },
+        "xy_offset_layer_0": {
+            "default_value": 0
+        },
+        "hole_xy_offset": {
+            "default_value": 0
+        },
         "wall_transition_length": {
             "default_value": 0.4
         },
@@ -655,9 +634,6 @@
         },
         "wall_transition_filter_deviation": {
             "default_value": 0.1
-        },
-        "wall_0_wipe_dist": {
-            "default_value": 0.2
         },
         "min_wall_line_width": {
             "default_value": 0.3
@@ -674,15 +650,6 @@
         "min_bead_width": {
             "default_value": 0.2
         },
-        "xy_offset": {
-            "default_value": 0
-        },
-        "xy_offset_layer_0": {
-            "default_value": 0
-        },
-        "hole_xy_offset": {
-            "default_value": 0
-        },
         "alternate_extra_perimeter": {
             "default_value": true
         },
@@ -692,20 +659,53 @@
         "skin_outline_count": {
             "default_value": 1
         },
-        "skin_overlap": {
-            "default_value": 5
+        "jerk_enabled": {
+            "default_value": false
         },
-        "skin_overlap_mm": {
-            "default_value": 0.02
+        "jerk_print": {
+            "default_value": 20
         },
-        "infill_overlap": {
-            "default_value": 10
+        "jerk_infill": {
+            "default_value": 20
         },
-        "infill_overlap_mm": {
-            "default_value": 0.04
+        "jerk_wall_0": {
+            "default_value": 20
         },
-        "infill_wipe_dist": {
-            "default_value": 0.1
+        "jerk_wall_x": {
+            "default_value": 20
+        },
+        "jerk_topbottom": {
+            "default_value": 20
+        },
+        "jerk_roofing": {
+            "default_value": 20
+        },
+        "jerk_support_infill": {
+            "default_value": 20
+        },
+        "jerk_support_roof": {
+            "default_value": 20
+        },
+        "jerk_support_bottom": {
+            "default_value": 20
+        },
+        "jerk_prime_tower": {
+            "default_value": 20
+        },
+        "jerk_travel": {
+            "default_value": 20
+        },
+        "jerk_layer_0": {
+            "default_value": 20
+        },
+        "jerk_print_layer_0": {
+            "default_value": 20
+        },
+        "jerk_travel_layer_0": {
+            "default_value": 20
+        },
+        "jerk_skirt_brim": {
+            "default_value": 20
         },
         "wall_line_width": {
             "default_value": 0.4
