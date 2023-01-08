@@ -2723,6 +2723,18 @@
                                 "advanced"
                             ],
                             "children": {
+                                "acceleration_travel_enabled": {
+                                    "label": "Enable Travel Acceleration",
+                                    "description": "Use a separate acceleration rate for travel moves. If disabled, travel moves will use the acceleration value of the printed line at their destination.",
+                                    "type": "bool",
+                                    "default_value": false,
+                                    "calcu_value": "(acceleration_enabled)",
+                                    "resolve": "acceleration_travel_enabled",
+                                    "enabled": "acceleration_enabled",
+                                    "visible": "acceleration_enabled",
+                                    "settable_per_mesh": false,
+                                    "settable_per_extruder": false
+                                },
                                 "acceleration_print": {
                                     "label": "Print Acceleration",
                                     "description": "The acceleration with which printing happens.",
@@ -6332,16 +6344,6 @@
                             "enabled": "support_interface_enable and (support_enable or support_meshes_present)",
                             "limit_to_extruder": "support_interface_extruder_nr",
                             "value": "speed_support / 1.5",
-                            "settable_per_mesh": false,
-                            "settable_per_extruder": false
-                        },
-                        "acceleration_travel_enabled": {
-                            "label": "Enable Travel Acceleration",
-                            "description": "Use a separate acceleration rate for travel moves. If disabled, travel moves will use the acceleration value of the printed line at their destination.",
-                            "type": "bool",
-                            "default_value": true,
-                            "resolve": "acceleration_travel_enabled",
-                            "enabled": "acceleration_enabled",
                             "settable_per_mesh": false,
                             "settable_per_extruder": false
                         },
