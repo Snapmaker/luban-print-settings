@@ -28,25 +28,25 @@
             "default_value": "#464646"
         },
         "material_print_temperature": {
-            "default_value": 245
+            "default_value": 235
         },
         "material_print_temperature_layer_0": {
-            "default_value": 255
+            "default_value": 235
         },
         "material_initial_print_temperature": {
-            "default_value": 240
+            "default_value": 230
         },
         "material_final_print_temperature": {
-            "default_value": 240
+            "default_value": 230
         },
         "material_extrusion_cool_down_speed": {
             "default_value": 0.7
         },
         "material_bed_temperature": {
-            "default_value": 100
+            "default_value": 80
         },
         "material_bed_temperature_layer_0": {
-            "default_value": 100
+            "default_value": 80
         },
         "material_standby_temperature": {
             "default_value": 210
