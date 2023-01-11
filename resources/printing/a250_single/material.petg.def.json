@@ -38,13 +38,13 @@
             "default_value": 150
         },
         "cool_fan_speed": {
-            "default_value": 100
+            "default_value": 50
         },
         "cool_fan_speed_min": {
-            "default_value": 100
+            "default_value": 50
         },
         "cool_fan_speed_max": {
-            "default_value": 100
+            "default_value": 50
         },
         "cool_min_layer_time_fan_speed_max": {
             "default_value": 10
