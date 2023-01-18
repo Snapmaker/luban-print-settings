@@ -213,7 +213,7 @@
             "default_value": false
         },
         "support_generate_type": {
-            "default_value": "normal"
+            "default_value": "none"
         },
         "support_tree_angle": {
             "default_value": 40
