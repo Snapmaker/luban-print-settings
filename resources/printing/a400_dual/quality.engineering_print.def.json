@@ -231,7 +231,7 @@
             "default_value": 0.2
         },
         "support_enable": {
-            "default_value": true
+            "default_value": false
         },
         "support_structure": {
             "default_value": "normal"
