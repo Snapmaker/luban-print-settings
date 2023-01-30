@@ -1,0 +1,14 @@
+{
+    "extends": "../../tsconfig.base",
+    "include": [
+        "scripts/**/*.ts"
+    ],
+    "compilerOptions": {
+
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "isolatedModules": false
+        }
+    }
+}
