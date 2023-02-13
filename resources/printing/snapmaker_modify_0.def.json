@@ -6197,6 +6197,79 @@
                                 }
                             }
                         },
+                        "heated_bed_deform_wait_enabled": {
+                            "label": "Enable Heated Bed Deform Wait",
+                            "description": "The heated bed will deform during heating process, after a certain time the heated bed will restore to initial state.",
+                            "type": "bool",
+                            "default_value": false,
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false,
+                            "filter": [
+                                "advanced"
+                            ],
+                            "children": {
+                                "heated_bed_time_delay_150": {
+                                    "label": "Heated Bed Time Delay 150*150 mm^2",
+                                    "description": "The time delay for models ≥ 150*150 mm^2 area",
+                                    "unit": "s",
+                                    "type": "float",
+                                    "minimum_value": "0",
+                                    "maximum_value_warning": "6000",
+                                    "default_value": 120,
+                                    "visible": "heated_bed_deform_wait_enabled",
+                                    "filter": [
+                                        "advanced"
+                                    ],
+                                    "min": 0,
+                                    "max": 20000
+                                },
+                                "heated_bed_time_delay_200": {
+                                    "label": "Heated Bed Time Delay 200*200 mm^2",
+                                    "description": "The time delay for models ≥ 200*200 mm^2 area",
+                                    "unit": "s",
+                                    "type": "float",
+                                    "minimum_value": "0",
+                                    "maximum_value_warning": "6000",
+                                    "default_value": 300,
+                                    "visible": "heated_bed_deform_wait_enabled",
+                                    "filter": [
+                                        "advanced"
+                                    ],
+                                    "min": 0,
+                                    "max": 20000
+                                },
+                                "heated_bed_time_delay_250": {
+                                    "label": "Heated Bed Time Delay 250*250 mm^2",
+                                    "description": "The time delay for models ≥ 250*250 mm^2 area",
+                                    "unit": "s",
+                                    "type": "float",
+                                    "minimum_value": "0",
+                                    "maximum_value_warning": "6000",
+                                    "default_value": 480,
+                                    "visible": "heated_bed_deform_wait_enabled",
+                                    "filter": [
+                                        "advanced"
+                                    ],
+                                    "min": 0,
+                                    "max": 20000
+                                },
+                                "heated_bed_time_delay_300": {
+                                    "label": "Heated Bed Time Delay 300*300 mm^2",
+                                    "description": "The time delay for models ≥ 300*300 mm^2 area",
+                                    "unit": "s",
+                                    "type": "float",
+                                    "minimum_value": "0",
+                                    "maximum_value_warning": "6000",
+                                    "default_value": 600,
+                                    "visible": "heated_bed_deform_wait_enabled",
+                                    "filter": [
+                                        "advanced"
+                                    ],
+                                    "min": 0,
+                                    "max": 20000
+                                }
+                            }
+                        },
                         "wall_line_width": {
                             "label": "Wall Line Width",
                             "description": "Width of a single wall line.",
