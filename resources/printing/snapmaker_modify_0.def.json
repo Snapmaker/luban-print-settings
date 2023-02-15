@@ -3741,7 +3741,7 @@
                                             "default_value": 0.1,
                                             "calcu_value": "support_type === 'everywhere' ? support_z_distance : 0",
                                             "limit_to_extruder": "support_bottom_extruder_nr",
-                                            "visible": true,
+                                            "visible": "support_type === 'everywhere'",
                                             "settable_per_mesh": false,
                                             "min": 0,
                                             "max": 20000
@@ -3795,7 +3795,7 @@
                                     "default_value": 0.2,
                                     "calcu_value": "line_width / 2",
                                     "limit_to_extruder": "support_infill_extruder_nr",
-                                    "visible": true,
+                                    "visible": "support_xy_overrides_z === 'z_overrides_xy'",
                                     "settable_per_mesh": false,
                                     "filter": [
                                         "advanced"
