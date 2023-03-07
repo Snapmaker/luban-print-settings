@@ -4,7 +4,7 @@
     "category": "Coated Paper",
     "i18nName": "key-default_name-Cutting 350g",
     "i18nCategory": "key-default_category-Coated Paper",
-    "inherits": "snapmaker2",
+    "inherits": "snapmaker_artisan",
     "metadata": {},
     "overrides": {
         "path_type": {

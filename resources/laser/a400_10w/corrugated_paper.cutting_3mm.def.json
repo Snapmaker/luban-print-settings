@@ -4,7 +4,7 @@
     "category": "Corrugated Paper",
     "i18nName": "key-default_name-Cutting 3mm",
     "i18nCategory": "key-default_category-Corrugated Paper",
-    "inherits": "snapmaker2",
+    "inherits": "snapmaker_artisan",
     "metadata": {},
     "overrides": {
         "path_type": {
