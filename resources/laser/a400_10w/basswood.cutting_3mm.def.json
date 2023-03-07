@@ -4,7 +4,7 @@
     "category": "Basswood",
     "i18nName": "key-default_name-Cutting 3mm",
     "i18nCategory": "key-default_category-Basswood",
-    "inherits": "snapmaker2",
+    "inherits": "snapmaker_artisan",
     "metadata": {},
     "overrides": {
         "path_type": {

@@ -4,7 +4,7 @@
     "category": "Crazy Horse Leather",
     "i18nName": "key-default_name-Line-filled Engraving",
     "i18nCategory": "key-default_category-Crazy Horse Leather",
-    "inherits": "snapmaker2",
+    "inherits": "snapmaker_artisan",
     "metadata": {},
     "overrides": {
         "path_type": {

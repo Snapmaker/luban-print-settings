@@ -2,7 +2,6 @@
     "definitionId": "snapmaker2",
     "version": "1.0.0",
     "name": "CUT",
-    "inherits": "snapmaker_laser",
     "settings": {
         "machine_max_feedrate_x":
         {

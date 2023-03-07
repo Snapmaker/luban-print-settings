@@ -4,7 +4,7 @@
     "category": "Black Acrylic",
     "i18nName": "key-default_name-Cutting 5mm",
     "i18nCategory": "key-default_category-Black Acrylic",
-    "inherits": "snapmaker2",
+    "inherits": "snapmaker_artisan",
     "metadata": {},
     "overrides": {
         "path_type": {
