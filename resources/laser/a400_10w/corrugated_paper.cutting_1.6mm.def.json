@@ -13,6 +13,9 @@
         "work_speed": {
             "default_value": 960
         },
+        "initial_height_offset": {
+            "default_value": 0
+        },
         "multi_passes": {
             "default_value": 1
         },
