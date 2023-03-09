@@ -25,6 +25,16 @@
             "unit": "mm/min",
             "enabled": "resolveOrValue('movement_mode') == 'greyscale-line'"
         },
+        "initial_height_offset": {
+            "default_value": 0,
+            "label": "Initial Cutting Height Offset",
+            "description": "Offset the cutting path in the Z-direction.",
+            "type": "float",
+            "min": -10,
+            "max": 10,
+            "unit": "mm",
+            "enabled": "resolveOrValue('path_type') == 'path'"
+        },
         "multi_passes": {
             "default_value": 1,
             "label": "Number of Passes",
