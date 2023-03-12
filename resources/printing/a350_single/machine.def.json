@@ -10,7 +10,7 @@
         "machine_name": {
             "label": "Machine Type",
             "description": "The name of your 3D printer model.",
-            "default_value": "Unknown",
+            "default_value": "Snapmaker A350",
             "type": "str",
             "settable_per_mesh": false,
             "settable_per_extruder": false,
