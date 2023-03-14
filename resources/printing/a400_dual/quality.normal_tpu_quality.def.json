@@ -621,10 +621,10 @@
             "default_value": 0.2
         },
         "xy_offset": {
-            "default_value": 0
+            "default_value": -0.015
         },
         "xy_offset_layer_0": {
-            "default_value": 0
+            "default_value": -0.015
         },
         "hole_xy_offset": {
             "default_value": 0
@@ -858,7 +858,7 @@
             "default_value": 0.8
         },
         "meshfix_maximum_deviation": {
-            "default_value": 0.025
+            "default_value": 0.04
         },
         "print_sequence": {
             "default_value": "all_at_once"

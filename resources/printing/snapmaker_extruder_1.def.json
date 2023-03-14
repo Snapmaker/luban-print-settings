@@ -18,7 +18,7 @@
             "default_value": 1.75
         },
         "machine_nozzle_id": {
-            "default_value": "unknown"
+            "default_value": "1"
         },
         "machine_nozzle_offset_x": {
             "default_value": 0
