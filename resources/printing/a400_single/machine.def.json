@@ -8,7 +8,7 @@
         "machine_show_variants": {
             "label": "Show Machine Variants",
             "description": "Whether to show the different variants of this machine, which are described in separate json files.",
-            "default_value": "Snapmaker Artisan",
+            "default_value": false,
             "type": "bool",
             "settable_per_mesh": false,
             "settable_per_extruder": false,
