@@ -11,13 +11,13 @@
             "default_value": "path"
         },
         "work_speed": {
-            "default_value": 240
+            "default_value": 600
         },
         "initial_height_offset": {
-            "default_value": -2
+            "default_value": -1.5
         },
         "multi_passes": {
-            "default_value": 3
+            "default_value": 10
         },
         "multi_pass_depth": {
             "default_value": 0
