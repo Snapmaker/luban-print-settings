@@ -2284,6 +2284,7 @@
                             "type": "float",
                             "calcu_value": "machine_nozzle_size",
                             "settable_per_mesh": true,
+                            "settable_per_extruder": true,
                             "filter": [
                                 "basic",
                                 "advanced"
@@ -6523,7 +6524,7 @@
                             "minimum_value": "0.001",
                             "minimum_value_warning": "0.1 + 0.4 * machine_nozzle_size",
                             "maximum_value_warning": "2 * machine_nozzle_size",
-                            "value": "line_width",
+                            "calcu_value": "line_width",
                             "default_value": 0.4,
                             "type": "float",
                             "limit_to_extruder": "wall_x_extruder_nr == wall_0_extruder_nr ? wall_0_extruder_nr : -1",
@@ -6972,7 +6973,7 @@
                             "unit": "mm",
                             "type": "float",
                             "default_value": 0,
-                            "calcu_value": "wall_line_width_0 < machine_nozzle_size and inset_direction !== \"outside_in\" ? (machine_nozzle_size - wall_line_width_0) / 2 : 0",
+                            "calcu_value": "wall_line_width_0 < machine_nozzle_size && inset_direction !== 'outside_in' ? (machine_nozzle_size - wall_line_width_0) / 2 : 0",
                             "minimum_value_warning": "0",
                             "maximum_value_warning": "machine_nozzle_size",
                             "limit_to_extruder": "wall_0_extruder_nr",
