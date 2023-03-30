@@ -2339,11 +2339,30 @@
                                     "visible": "top_layers > 0 || bottom_layers > 0",
                                     "limit_to_extruder": "top_bottom_extruder_nr",
                                     "settable_per_mesh": true,
+                                    "min": 0.01,
+                                    "max": 1.75,
                                     "filter": [
                                         "advanced"
-                                    ],
+                                    ]
+                                },
+                                "roofing_line_width": {
+                                    "label": "Top Surface Skin Line Width",
+                                    "description": "Width of a single line of the areas at the top of the print.",
+                                    "unit": "mm",
+                                    "minimum_value": "0.001",
+                                    "minimum_value_warning": "0.1 + 0.4 * machine_nozzle_size",
+                                    "maximum_value_warning": "2 * machine_nozzle_size",
+                                    "default_value": 0.4,
+                                    "type": "float",
+                                    "calcu_value": "skin_line_width",
+                                    "limit_to_extruder": "roofing_extruder_nr",
+                                    "settable_per_mesh": true,
+                                    "visible": "roofing_layer_count > 0 && top_layers > 0",
                                     "min": 0.01,
-                                    "max": 1.75
+                                    "max": 1.75,
+                                    "filter": [
+                                        "advanced"
+                                    ]
                                 },
                                 "infill_line_width": {
                                     "label": "Infill Line Width",
@@ -3047,10 +3066,9 @@
                                     "default_value": 0,
                                     "minimum_value": "0",
                                     "maximum_value_warning": "top_layers - 1",
-                                    "calcu_value": "0",
                                     "limit_to_extruder": "roofing_extruder_nr",
                                     "settable_per_mesh": false,
-                                    "visible": "false",
+                                    "visible": "top_layers > 0",
                                     "filter": [
                                         "advanced",
                                         "strength",
@@ -3937,7 +3955,7 @@
                     "type": "category",
                     "icon": "category_support",
                     "description": "Support Fine-tuning",
-                    "children":{
+                    "children": {
                         "support_interface_enable": {
                             "label": "Enabled Support Interface",
                             "description": "Generate a dense interface between the model and the support. This will create a skin at the top of the support on which the model is printed and at the bottom of the support, where it rests on the model.",
@@ -4830,7 +4848,7 @@
                             "options": {
                                 "prime_tower": "Prime Tower",
                                 "ooze_shield": "Ooze Shield",
-                                "both":"Prime Tower & Ooze Shield",
+                                "both": "Prime Tower & Ooze Shield",
                                 "none": "None"
                             },
                             "visible": "extruders_enabled_count > 1",
@@ -5407,7 +5425,6 @@
                                     "min": 0,
                                     "max": 20000
                                 },
-
                                 "bridge_skin_support_threshold": {
                                     "label": "Bridge Skin Support Threshold",
                                     "description": "If a skin region is supported for less than this percentage of its area, print it using the bridge settings. Otherwise it is printed using the normal skin settings.",
@@ -8177,22 +8194,6 @@
                                     },
                                     "default_value": "middle",
                                     "settable_per_mesh": true
-                                },
-                                "roofing_line_width": {
-                                    "label": "Top Surface Skin Line Width",
-                                    "description": "Width of a single line of the areas at the top of the print.",
-                                    "unit": "mm",
-                                    "minimum_value": "0.001",
-                                    "minimum_value_warning": "0.1 + 0.4 * machine_nozzle_size",
-                                    "maximum_value_warning": "2 * machine_nozzle_size",
-                                    "default_value": 0.4,
-                                    "type": "float",
-                                    "calcu_value": "skin_line_width",
-                                    "limit_to_extruder": "roofing_extruder_nr",
-                                    "settable_per_mesh": true,
-                                    "visible": "roofing_layer_count > 0 && top_layers > 0",
-                                    "min": 0,
-                                    "max": 20000
                                 },
                                 "roofing_pattern": {
                                     "label": "Top Surface Skin Pattern",
