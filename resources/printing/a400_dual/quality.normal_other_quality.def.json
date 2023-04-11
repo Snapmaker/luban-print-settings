@@ -621,7 +621,7 @@
             "default_value": true
         },
         "retraction_combing": {
-            "default_value": "infill"
+            "default_value": "no_outer_surfaces"
         },
         "retraction_combing_max_distance": {
             "default_value": 10

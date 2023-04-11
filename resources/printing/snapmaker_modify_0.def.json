@@ -5809,6 +5809,7 @@
                                 "off": "Off",
                                 "all": "All",
                                 "noskin": "Not in Skin",
+                                "no_outer_surfaces": "Not on Outer Surface",
                                 "infill": "Within Infill"
                             },
                             "default_value": "all",
