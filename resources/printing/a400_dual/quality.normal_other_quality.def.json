@@ -639,7 +639,7 @@
             "default_value": false
         },
         "travel_avoid_distance": {
-            "default_value": 0.625
+            "default_value": 3
         },
         "wall_transition_length": {
             "default_value": 0.4

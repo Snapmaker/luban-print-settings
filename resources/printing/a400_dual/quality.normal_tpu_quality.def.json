@@ -615,7 +615,7 @@
             "default_value": false
         },
         "travel_avoid_distance": {
-            "default_value": 0.625
+            "default_value": 3
         },
         "wall_0_wipe_dist": {
             "default_value": 0.2
