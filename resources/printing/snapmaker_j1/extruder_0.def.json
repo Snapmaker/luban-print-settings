@@ -102,7 +102,7 @@
             "default_value": 25
         },
         "retraction_amount": {
-            "default_value": 6.5
+            "default_value": 1
         },
         "retract_at_layer_change": {
             "default_value": false
@@ -112,6 +112,12 @@
         },
         "retraction_hop_enabled": {
             "default_value": false
+        },
+        "switch_extruder_retraction_amount": {
+            "default_value": 1
+        },
+        "switch_extruder_retraction_speed": {
+            "default_value": 30
         },
         "line_width": {
             "default_value": 0.4
