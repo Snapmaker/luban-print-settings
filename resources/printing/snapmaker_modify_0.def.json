@@ -5900,11 +5900,8 @@
                             "unit": "mm",
                             "type": "float",
                             "default_value": 0.625,
-                            "calcu_value": "machine_nozzle_tip_outer_diameter / 2 * 1.25",
                             "minimum_value": "0",
-                            "minimum_value_warning": "machine_nozzle_tip_outer_diameter * 0.5",
-                            "maximum_value_warning": "machine_nozzle_tip_outer_diameter * 5",
-                            "visible": "resolveOrValue(retraction_combing) !== 'off' && travel_avoid_other_parts",
+                            "visible": "retraction_combing !== 'off' && travel_avoid_other_parts",
                             "settable_per_mesh": false,
                             "settable_per_extruder": false,
                             "filter": [
