@@ -108,7 +108,7 @@
             "default_value": 1000
         },
         "acceleration_wall_x": {
-            "default_value": 2000
+            "default_value": 1000
         },
         "acceleration_topbottom": {
             "default_value": 2000
