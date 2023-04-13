@@ -652,7 +652,7 @@
                             "description": "The default acceleration of print head movement.",
                             "unit": "mm/s²",
                             "type": "float",
-                            "default_value": 4000,
+                            "default_value": 1000,
                             "settable_per_mesh": false,
                             "settable_per_extruder": false,
                             "settable_per_meshgroup": false,
@@ -1889,12 +1889,54 @@
                                 "all"
                             ],
                             "min": 0,
-                            "max": 20000
+                            "max": 20000,
+                            "children": {
+                                "wall_0_material_flow_layer_0": {
+                                    "label": "Initial Layer Outer Wall Flow",
+                                    "description": "Flow compensation on the outermost wall line of the first layer.",
+                                    "unit": "%",
+                                    "type": "float",
+                                    "default_value": 100,
+                                    "calcu_value": "material_flow_layer_0",
+                                    "minimum_value": "0.0001",
+                                    "minimum_value_warning": "50",
+                                    "maximum_value_warning": "150",
+                                    "limit_to_extruder": "wall_0_extruder_nr",
+                                    "settable_per_mesh": false
+                                },
+                                "wall_x_material_flow_layer_0": {
+                                    "label": "Initial Layer Inner Wall Flow",
+                                    "description": "Flow compensation on wall lines for all wall lines except the outermost one, but only for the first layer",
+                                    "unit": "%",
+                                    "type": "float",
+                                    "default_value": 100,
+                                    "calcu_value": "material_flow_layer_0",
+                                    "minimum_value": "0.0001",
+                                    "minimum_value_warning": "50",
+                                    "maximum_value_warning": "150",
+                                    "limit_to_extruder": "wall_x_extruder_nr",
+                                    "settable_per_mesh": false
+                                },
+                                "skin_material_flow_layer_0": {
+                                    "label": "Initial Layer Bottom Flow",
+                                    "description": "Flow compensation on bottom lines of the first layer",
+                                    "unit": "%",
+                                    "type": "float",
+                                    "default_value": 100,
+                                    "calcu_value": "material_flow_layer_0",
+                                    "minimum_value": "0.0001",
+                                    "minimum_value_warning": "50",
+                                    "maximum_value_warning": "150",
+                                    "visible": "bottom_layers > 0",
+                                    "limit_to_extruder": "top_bottom_extruder_nr",
+                                    "settable_per_mesh": false
+                                }
+                            }
                         }
                     }
                 },
-                "material_no_category": {
-                    "label": "material_no_category",
+                "unclassified": {
+                    "label": "Unclassified",
                     "icon": "first_layer_optimization",
                     "description": "First Layer Optimization",
                     "type": "category",
@@ -6599,46 +6641,6 @@
                             "limit_to_extruder": "support_interface_extruder_nr",
                             "settable_per_mesh": false,
                             "settable_per_extruder": false
-                        },
-                        "wall_x_material_flow_layer_0": {
-                            "label": "Initial Layer Inner Wall Flow",
-                            "description": "Flow compensation on wall lines for all wall lines except the outermost one, but only for the first layer",
-                            "unit": "%",
-                            "type": "float",
-                            "default_value": 100,
-                            "value": "material_flow_layer_0",
-                            "minimum_value": "0.0001",
-                            "minimum_value_warning": "50",
-                            "maximum_value_warning": "150",
-                            "limit_to_extruder": "wall_x_extruder_nr",
-                            "settable_per_mesh": false
-                        },
-                        "wall_0_material_flow_layer_0": {
-                            "label": "Initial Layer Outer Wall Flow",
-                            "description": "Flow compensation on the outermost wall line of the first layer.",
-                            "unit": "%",
-                            "type": "float",
-                            "default_value": 100,
-                            "value": "material_flow_layer_0",
-                            "minimum_value": "0.0001",
-                            "minimum_value_warning": "50",
-                            "maximum_value_warning": "150",
-                            "limit_to_extruder": "wall_0_extruder_nr",
-                            "settable_per_mesh": false
-                        },
-                        "skin_material_flow_layer_0": {
-                            "label": "Initial Layer Bottom Flow",
-                            "description": "Flow compensation on bottom lines of the first layer",
-                            "unit": "%",
-                            "type": "float",
-                            "default_value": 100,
-                            "value": "material_flow_layer_0",
-                            "minimum_value": "0.0001",
-                            "minimum_value_warning": "50",
-                            "maximum_value_warning": "150",
-                            "enabled": "bottom_layers > 0",
-                            "limit_to_extruder": "top_bottom_extruder_nr",
-                            "settable_per_mesh": false
                         },
                         "speed_wall": {
                             "label": "Wall Speed",

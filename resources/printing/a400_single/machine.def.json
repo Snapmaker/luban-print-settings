@@ -491,14 +491,7 @@
             "settable_per_meshgroup": false
         },
         "machine_acceleration": {
-            "label": "Default Acceleration",
-            "description": "The default acceleration of print head movement.",
-            "unit": "mm/s²",
-            "type": "float",
-            "default_value": 4000,
-            "settable_per_mesh": false,
-            "settable_per_extruder": false,
-            "settable_per_meshgroup": false
+            "default_value": 1000
         },
         "machine_max_jerk_xy": {
             "label": "Default X-Y Jerk",
