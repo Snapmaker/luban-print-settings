@@ -972,6 +972,16 @@
                     "type": "category",
                     "visible": "false",
                     "children": {
+                        "colorful_slicing_enable":{
+                            "label": "Color Slicing",
+                            "description": "Enable slicing based on mesh colors.",
+                            "default_value": true,
+                            "type": "bool",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false,
+                            "settable_per_meshgroup": false,
+                            "visible": "false"
+                        },
                         "center_object": {
                             "description": "Whether to center the object on the middle of the build platform (0,0), instead of using the coordinate system in which the object was saved.",
                             "type": "bool",
