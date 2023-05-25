@@ -1335,7 +1335,7 @@
                             "description": "The minimum time spent in a layer. This forces the printer to slow down, to at least spend the time set here in one layer. This allows the printed material to cool down properly before printing the next layer. Layers may still take shorter than the minimal layer time if Lift Head is disabled and if the Minimum Speed would otherwise be violated.",
                             "unit": "s",
                             "type": "float",
-                            "default_value": 10,
+                            "default_value": 5,
                             "minimum_value": "0",
                             "maximum_value": "600",
                             "settable_per_mesh": false,

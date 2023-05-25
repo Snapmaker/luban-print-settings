@@ -70,7 +70,7 @@
             "default_value": true
         },
         "cool_min_layer_time": {
-            "default_value": 10
+            "default_value": 5
         },
         "cool_min_speed": {
             "default_value": 10
