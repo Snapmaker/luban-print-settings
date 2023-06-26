@@ -64,7 +64,7 @@
             "default_value": 10
         },
         "cool_fan_full_layer": {
-            "default_value": 2
+            "default_value": 4
         },
         "cool_lift_head": {
             "default_value": true

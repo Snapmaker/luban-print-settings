@@ -5072,6 +5072,103 @@
                             ],
                             "min": 0,
                             "max": 20000
+                        },
+                        "interlocking_enable":
+                        {
+                            "label": "Generate Interlocking Structure",
+                            "description": "At the locations where models touch, generate an interlocking beam structure. This improves the adhesion between models, especially models printed in different materials.",
+                            "type": "bool",
+                            "visible": "extruders_enabled_count > 1",
+                            "default_value": false,
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false,
+                            "filter": [
+                                "basic",
+                                "advanced"
+                            ]
+                        },
+                        "interlocking_beam_width":
+                        {
+                            "label": "Interlocking Beam Width",
+                            "description": "The width of the interlocking structure beams.",
+                            "type": "float",
+                            "unit": "mm",
+                            "visible": "extruders_enabled_count > 1 && interlocking_enable",
+                            "default_value": 0.8,
+                            "value": "2 * wall_line_width_0",
+                            "minimum_value": "min_odd_wall_line_width",
+                            "maximum_value": "min(0.5 * machine_width, 0.5 * machine_depth)",
+                            "maximum_value_warning": "max(extruderValues('wall_line_width_0')) * 6",
+                            "settable_per_mesh": true,
+                            "settable_per_extruder": true,
+                            "filter": [
+                                "advanced"
+                            ]
+                        },
+                        "interlocking_orientation":
+                        {
+                            "label": "Interlocking Structure Orientation",
+                            "description": "The height of the beams of the interlocking structure, measured in number of layers. Less layers is stronger, but more prone to defects.",
+                            "unit": "\u00b0",
+                            "type": "float",
+                            "visible": "extruders_enabled_count > 1 && interlocking_enable",
+                            "default_value": 22.5,
+                            "minimum_value": "0",
+                            "maximum_value": "360",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false,
+                            "filter": [
+                                "advanced"
+                            ]
+                        },
+                        "interlocking_beam_layer_count":
+                        {
+                            "label": "Interlocking Beam Layer Count",
+                            "description": "The height of the beams of the interlocking structure, measured in number of layers. Less layers is stronger, but more prone to defects.",
+                            "type": "int",
+                            "visible": "extruders_enabled_count > 1 && interlocking_enable",
+                            "default_value": 2,
+                            "minimum_value": "1",
+                            "maximum_value_warning": "50",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false,
+                            "filter": [
+                                "advanced"
+                            ]
+                        },
+                        "interlocking_depth":
+                        {
+                            "label": "Interlocking Depth",
+                            "description": "The distance from the boundary between models to generate interlocking structure, measured in cells. Too few cells will result in poor adhesion.",
+                            "type": "int",
+                            "visible": "extruders_enabled_count > 1 && interlocking_enable",
+                            "default_value": 2,
+                            "minimum_value": "1",
+                            "maximum_value": "10",
+                            "maximum_value_warning": "5",
+                            "resolve": "max(extruderValues('interlocking_depth'))",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false,
+                            "filter": [
+                                "advanced"
+                            ]
+                        },
+                        "interlocking_boundary_avoidance":
+                        {
+                            "label": "Interlocking Boundary Avoidance",
+                            "description": "The distance from the outside of a model where interlocking structures will not be generated, measured in cells.",
+                            "type": "int",
+                            "visible": "extruders_enabled_count > 1 && interlocking_enable",
+                            "default_value": 2,
+                            "minimum_value": "0",
+                            "minimum_value_warning": "resolveOrValue('interlocking_depth')",
+                            "maximum_value": "10",
+                            "maximum_value_warning": "5",
+                            "settable_per_mesh": false,
+                            "settable_per_extruder": false,
+                            "filter": [
+                                "advanced"
+                            ]
                         }
                     }
                 },

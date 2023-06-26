@@ -693,10 +693,10 @@
             "default_value": 1
         },
         "skin_overlap": {
-            "default_value": 5
+            "default_value": 15
         },
         "skin_overlap_mm": {
-            "default_value": 0.02
+            "default_value": 0.06
         },
         "infill_overlap": {
             "default_value": 10
