@@ -173,6 +173,16 @@
             "max": 100,
             "unit": "%"
         },
+        "fixed_min_power": {
+            "default_value": 0,
+            "label": "Minimum Laser Power",
+            "description": "The minimum laser power used for variable power line engraving.",
+            "type": "float",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "enabled": "resolveOrValue('path_type') == 'fill' and resolveOrValue('movement_mode') == 'greyscale-variable-line'"
+        },
         "fixed_power_enabled": {
             "default_value": true,
             "type": "bool"
@@ -184,7 +194,8 @@
             "type": "enum",
             "options": {
                 "greyscale-line": "Line",
-                "greyscale-dot": "Dot"
+                "greyscale-dot": "Dot",
+                "greyscale-variable-line": "Variable Line"
             },
             "enabled": "resolveOrValue('path_type') == 'fill'"
         },
@@ -230,7 +241,23 @@
                 "Diagonal2": "Diagonal2"
             },
             "type": "enum",
-            "enabled": "resolveOrValue('path_type') == 'fill' and resolveOrValue('movement_mode') == 'greyscale-line'"
+            "enabled": "resolveOrValue('path_type') == 'fill' and resolveOrValue('movement_mode') != 'greyscale-dot'"
+        },
+        "power_level_divisions": {
+            "default_value": 255,
+            "label": "Laser Power Level Divisions",
+            "description": "The number of laser power classes divided between the maximum and minimum laser power. The different laser power levels will be associated with the grayscale of the image.",
+            "min": 2,
+            "max": 65535,
+            "step": 1,
+            "type": "float",
+            "enabled": "resolveOrValue('path_type') == 'fill' and resolveOrValue('movement_mode') == 'greyscale-variable-line'"
+        },
+        "auxiliary_air_pump": {
+            "default_value": false,
+            "label": "Auxiliary Air Pump",
+            "description": "It can effectively increase the air flow rate over the laser focus point to achieve better cutting results.However, it may give worse results for non-cutting conditions.",
+            "type": "bool"
         }
     }
 }
