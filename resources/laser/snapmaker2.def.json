@@ -264,6 +264,12 @@
             "label": "Half Diode Mode",
             "description": "For lasers that use multiple diode combining technology and support independent control of different groups of diodes, finer power control and smaller spot sizes can be achieved by turning on only one group of diodes.",
             "type": "bool"
+        },
+        "constant_power_mode": {
+            "default_value": true,
+            "label": "Constant Power Mode",
+            "description": "In constant power mode, the laser does not change with speed and is recommended to be turned on when cutting. And it is recommended to turn it off when picture engraving.",
+            "type": "bool"
         }
     }
 }

@@ -45,10 +45,10 @@
       "default_value": "Horizontal"
     },
     "machine_max_feedrate_x": {
-      "default_value": 300
+      "default_value": 600
     },
     "machine_max_feedrate_y": {
-      "default_value": 300
+      "default_value": 200
     },
     "machine_max_feedrate_z": {
       "default_value": 40
@@ -57,10 +57,10 @@
       "default_value": 45
     },
     "machine_max_acceleration_x": {
-      "default_value": 5000
+      "default_value": 2000
     },
     "machine_max_acceleration_y": {
-      "default_value": 5000
+      "default_value": 200
     },
     "machine_max_acceleration_z": {
       "default_value": 500
@@ -69,10 +69,10 @@
       "default_value": 500
     },
     "machine_acceleration": {
-      "default_value": 500
+      "default_value": 2500
     },
     "machine_minimum_feedrate": {
-      "default_value": 0.05
+      "default_value": 1
     },
     "fixed_min_power": {
       "default_value": 0
