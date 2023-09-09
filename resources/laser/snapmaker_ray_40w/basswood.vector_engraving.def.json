@@ -21,10 +21,10 @@
       "default_value": 1
     },
     "multi_pass_depth": {
-      "default_value": 1
+      "default_value": 0
     },
     "fixed_power": {
-      "default_value": 20
+      "default_value": 60
     },
     "fixed_power_enabled": {
       "default_value": true
@@ -33,7 +33,7 @@
       "default_value": "greyscale-line"
     },
     "fill_interval": {
-      "default_value": 0.25
+      "default_value": 0.1
     },
     "dwell_time": {
       "default_value": 5
@@ -84,6 +84,9 @@
       "default_value": false
     },
     "half_diode_mode": {
+      "default_value": true
+    },
+    "constant_power_mode": {
       "default_value": false
     }
   }

@@ -12,7 +12,7 @@
       "default_value": "fill"
     },
     "work_speed": {
-      "default_value": 6000
+      "default_value": 15000
     },
     "initial_height_offset": {
       "default_value": 0
@@ -21,10 +21,10 @@
       "default_value": 1
     },
     "multi_pass_depth": {
-      "default_value": 1
+      "default_value": 0
     },
     "fixed_power": {
-      "default_value": 60
+      "default_value": 65
     },
     "fixed_power_enabled": {
       "default_value": true
@@ -39,7 +39,7 @@
       "default_value": 5
     },
     "jog_speed": {
-      "default_value": 6000
+      "default_value": 15000
     },
     "direction": {
       "default_value": "Horizontal"
@@ -84,6 +84,9 @@
       "default_value": false
     },
     "half_diode_mode": {
+      "default_value": false
+    },
+    "constant_power_mode": {
       "default_value": false
     }
   }

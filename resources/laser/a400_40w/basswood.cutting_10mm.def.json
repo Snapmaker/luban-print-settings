@@ -1,18 +1,18 @@
 {
   "version": "4.9.0",
-  "name": "Fine Fill",
+  "name": "Cutting 10mm",
   "category": "Basswood",
-  "i18nName": "key-default_name-Line-filled Engraving",
+  "i18nName": "key-default_name-Cutting 10mm",
   "i18nCategory": "Basswood",
   "isRecommended": true,
   "inherits": "snapmaker_artisan",
   "metadata": {},
   "overrides": {
     "path_type": {
-      "default_value": "fill"
+      "default_value": "path"
     },
     "work_speed": {
-      "default_value": 3000
+      "default_value": 220
     },
     "initial_height_offset": {
       "default_value": 0
@@ -24,7 +24,7 @@
       "default_value": 0
     },
     "fixed_power": {
-      "default_value": 16
+      "default_value": 100
     },
     "fixed_power_enabled": {
       "default_value": true
@@ -39,7 +39,7 @@
       "default_value": 5
     },
     "jog_speed": {
-      "default_value": 3000
+      "default_value": 12000
     },
     "direction": {
       "default_value": "Horizontal"
@@ -81,13 +81,13 @@
       "default_value": 255
     },
     "auxiliary_air_pump": {
-      "default_value": false
-    },
-    "half_diode_mode": {
       "default_value": true
     },
-    "constant_power_mode": {
+    "half_diode_mode": {
       "default_value": false
+    },
+    "constant_power_mode": {
+      "default_value": true
     }
   }
 }
