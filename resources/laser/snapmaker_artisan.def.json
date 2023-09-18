@@ -10,7 +10,7 @@
             "description": "The maximum speed for the motor of the X-direction.",
             "unit": "mm/s",
             "type": "float",
-            "default_value": 300,
+            "default_value": 200,
             "settable_per_mesh": false,
             "settable_per_extruder": false,
             "settable_per_meshgroup": false
@@ -21,7 +21,7 @@
             "description": "The maximum speed for the motor of the Y-direction.",
             "unit": "mm/s",
             "type": "float",
-            "default_value": 300,
+            "default_value": 200,
             "settable_per_mesh": false,
             "settable_per_extruder": false,
             "settable_per_meshgroup": false
@@ -54,7 +54,7 @@
             "description": "Maximum acceleration for the motor of the X-direction",
             "unit": "mm/s²",
             "type": "float",
-            "default_value": 5000,
+            "default_value": 2000,
             "settable_per_mesh": false,
             "settable_per_extruder": false,
             "settable_per_meshgroup": false
@@ -65,7 +65,7 @@
             "description": "Maximum acceleration for the motor of the Y-direction.",
             "unit": "mm/s²",
             "type": "float",
-            "default_value": 5000,
+            "default_value": 2000,
             "settable_per_mesh": false,
             "settable_per_extruder": false,
             "settable_per_meshgroup": false
@@ -98,7 +98,7 @@
             "description": "The default acceleration of print head movement.",
             "unit": "mm/s²",
             "type": "float",
-            "default_value": 500,
+            "default_value": 2000,
             "settable_per_mesh": false,
             "settable_per_extruder": false,
             "settable_per_meshgroup": false
