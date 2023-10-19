@@ -269,6 +269,29 @@
             "label": "Constant Power Mode",
             "description": "In constant power mode, the laser does not change with speed and is recommended to be turned on when cutting. And it is recommended to turn it off when picture engraving.",
             "type": "bool"
+        },
+        "dot_with_compensation": {
+            "default_value": 0,
+            "label": "Dot width compensation",
+            "description": "It is used to compensate for deviations caused by the laser spot. It prevents excessive burning in image engraving situations. In the case of cutting, it guarantees more precise dimensions.",
+            "type": "float",
+            "enabled": "resolveOrValue('path_type') == 'fill' and resolveOrValue('movement_mode') == 'greyscale-line'",
+            "unit": "mm"
+        },
+        "scanning_pre_accel_ratio": {
+            "default_value": 0,
+            "label": "Over Scanning",
+            "min": 0,
+            "max": 100,
+            "unit": "%",
+            "description": "Over Scanning allows the true operating speed to be as close as possible to the target speed, but with a certain loss of machining travel. This value represents the percentage of the desired speed that will reach the target speed.",
+            "type": "float",
+            "enabled": "resolveOrValue('path_type') == 'fill' and resolveOrValue('movement_mode') == 'greyscale-line'"
+        },
+        "scan_backgap": {
+            "default_value": "[[0,0]]",
+            "label": "Scan Offset",
+            "description": "Used for bi-directional filler engraving, it compensates for positioning deviations due to machine backlash."
         }
     }
 }
