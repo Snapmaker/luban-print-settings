@@ -288,10 +288,13 @@
             "type": "float",
             "enabled": "resolveOrValue('path_type') == 'fill' and resolveOrValue('movement_mode') == 'greyscale-line'"
         },
-        "scan_backgap": {
-            "default_value": "[[0,0]]",
+        "scanning_offset": {
+            "default_value": 0,
             "label": "Scan Offset",
-            "description": "Used for bi-directional filler engraving, it compensates for positioning deviations due to machine backlash."
+            "unit": "mm",
+            "type": "float",
+            "description": "Used for bi-directional filler engraving, it compensates for positioning deviations due to machine backlash.",
+            "enabled": "resolveOrValue('path_type') == 'fill' and resolveOrValue('movement_mode') == 'greyscale-line'"
         }
     }
 }
