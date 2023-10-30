@@ -49,7 +49,7 @@
             "label": "Z Step per Pass",
             "description": "Set the amount at which the Laser Module is lowered with each pass.",
             "type": "float",
-            "min": 0.00,
+            "min": 0.0,
             "max": 10,
             "unit": "mm",
             "enabled": "resolveOrValue('path_type') == 'path' and resolveOrValue('multi_passes') > 1"
@@ -102,7 +102,7 @@
         "dwell_time": {
             "default_value": 5,
             "label": "Dwell Time",
-            "description": "Determines how long the laser keeps on when it’s engraving a dot.",
+            "description": "Determines how long the laser keeps on when it\u2019s engraving a dot.",
             "type": "float",
             "min": 0.1,
             "max": 1000,
