@@ -39,7 +39,7 @@
             "default_value": 5
         },
         "jog_speed": {
-            "default_value": 5400
+            "default_value": 9600
         },
         "direction": {
             "default_value": "Horizontal"
