@@ -2,7 +2,7 @@
     "version": "4.10.0",
     "name": "Line-filled Engraving",
     "category": "Basswood",
-    "i18nName": "key-default_name-Fast-Line-filled Engraving",
+    "i18nName": "key-default_name-Line-filled Engraving",
     "i18nCategory": "Basswood",
     "isRecommended": true,
     "inherits": "snapmaker_artisan",
@@ -84,7 +84,7 @@
             "default_value": false
         },
         "half_diode_mode": {
-            "default_value": false
+            "default_value": true
         },
         "constant_power_mode": {
             "default_value": false
