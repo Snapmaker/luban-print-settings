@@ -285,6 +285,58 @@
             "type": "float",
             "description": "Used for bi-directional filler engraving, it compensates for positioning deviations due to machine backlash.",
             "enabled": "resolveOrValue('path_type') == 'fill' and resolveOrValue('movement_mode') == 'greyscale-line'"
+        },
+        "galvo_print_field": {
+            "default_value": 40,
+            "label": "Galvo Print Field",
+            "unit": "mm",
+            "type": "float",
+            "description": ""
+        },
+        "galvo_print_type": {
+            "default_value": "splicing_linkage",
+            "description": "",
+            "label": "Galvo Print Type",
+            "type": "enum",
+            "options": {
+                "splicing_linkage": "Splicing Linkage",
+                "continuous_linkage": "Continuous Linkage"
+            }
+        },
+        "start_tc": {
+            "default_value": 0,
+            "label": "Start Tc",
+            "unit": "us",
+            "type": "float",
+            "description": ""
+        },
+        "end_tc": {
+            "default_value": 0,
+            "label": "End Tc",
+            "unit": "us",
+            "type": "float",
+            "description": ""
+        },
+        "cut_image_width": {
+            "default_value": 40,
+            "label": "Cut Image Width",
+            "unit": "mm",
+            "type": "float",
+            "description": ""
+        },
+        "cut_image_overlap_width": {
+            "default_value": 5,
+            "label": "Cut Image Overlap Width",
+            "unit": "mm",
+            "type": "float",
+            "description": ""
+        },
+        "scanning_line": {
+            "default_value": 0,
+            "label": "Scanning Line",
+            "unit": "mm",
+            "type": "float",
+            "description": ""
         }
     }
 }
