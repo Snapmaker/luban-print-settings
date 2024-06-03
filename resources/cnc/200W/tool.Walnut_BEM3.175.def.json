@@ -4,10 +4,10 @@
     "i18nCategory": "key-default_category-Walnut",
     "i18nName": "",
     "inherits": "snapmaker2",
-    "version": "4.12.0",
+    "version": "4.13.0",
     "overrides": {
         "tool_type": {
-            "default_value": "flat"
+            "default_value": "ball"
         },
         "diameter": {
             "default_value": 0.2
