@@ -1,18 +1,18 @@
 {
     "version": "4.13.0",
-    "name": "Vector Engraving",
+    "name": "Line filled",
     "category": "Aluminum",
-    "i18nName": "key-default_name-Vector Engraving",
+    "i18nName": "key-default_name-Line filled",
     "i18nCategory": "Aluminum",
     "isRecommended": true,
-    "inherits": "snapmaker_artisan",
+    "inherits": "snapmaker2",
     "metadata": {},
     "overrides": {
       "path_type": {
-        "default_value": "path"
+        "default_value": "fill"
       },
       "work_speed": {
-        "default_value": 300
+        "default_value": 800
       },
       "initial_height_offset": {
         "default_value": 0
@@ -33,7 +33,7 @@
         "default_value": "greyscale-line"
       },
       "fill_interval": {
-        "default_value": 0.2
+        "default_value": 0.04
       },
       "dwell_time": {
         "default_value": 5

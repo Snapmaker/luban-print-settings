@@ -1,18 +1,18 @@
 {
     "version": "4.13.0",
-    "name": "Line-filled Engraving",
+    "name": "Dot filled",
     "category": "Stainless Steel",
-    "i18nName": "key-default_name-Line-filled Engraving",
+    "i18nName": "key-default_name-Dot filled",
     "i18nCategory": "Stainless Steel",
     "isRecommended": true,
-    "inherits": "snapmaker_artisan",
+    "inherits": "snapmaker2",
     "metadata": {},
     "overrides": {
       "path_type": {
         "default_value": "fill"
       },
       "work_speed": {
-        "default_value": 300
+        "default_value": 500
       },
       "initial_height_offset": {
         "default_value": 0
@@ -30,13 +30,13 @@
         "default_value": true
       },
       "movement_mode": {
-        "default_value": "greyscale-line"
+        "default_value": "greyscale-dot"
       },
       "fill_interval": {
-        "default_value": 0.02
+        "default_value": 0.16
       },
       "dwell_time": {
-        "default_value": 5
+        "default_value": 15
       },
       "jog_speed": {
         "default_value": 4800
