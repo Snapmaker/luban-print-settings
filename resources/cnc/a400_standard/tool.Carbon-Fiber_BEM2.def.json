@@ -10,13 +10,13 @@
             "default_value": "ball"
         },
         "diameter": {
-            "default_value": 0.2
+            "default_value": 2
         },
         "angle": {
             "default_value": 30
         },
         "shaft_diameter": {
-            "default_value": 2
+            "default_value": 4
         },
         "jog_speed": {
             "default_value": 1500

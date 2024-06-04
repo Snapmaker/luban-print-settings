@@ -1,9 +1,9 @@
 {
     "version": "4.13.0",
     "name": "Dot filled",
-    "category": "Stainless Steel",
+    "category": "Copper",
     "i18nName": "key-default_name-Dot filled",
-    "i18nCategory": "Stainless Steel",
+    "i18nCategory": "Copper",
     "isRecommended": true,
     "inherits": "snapmaker2",
     "metadata": {},

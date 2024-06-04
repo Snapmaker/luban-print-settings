@@ -16,7 +16,7 @@
             "default_value": 180
         },
         "shaft_diameter": {
-            "default_value": 1.5
+            "default_value": 3.175
         },
         "jog_speed": {
             "default_value": 1500
