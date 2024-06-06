@@ -10,7 +10,7 @@
             "default_value": "vbit"
         },
         "diameter": {
-            "default_value": 4
+            "default_value": 0.2
         },
         "angle": {
             "default_value": 30
