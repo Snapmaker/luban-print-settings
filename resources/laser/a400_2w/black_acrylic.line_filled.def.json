@@ -12,7 +12,7 @@
         "default_value": "fill"
       },
       "work_speed": {
-        "default_value": 800
+        "default_value": 4500
       },
       "initial_height_offset": {
         "default_value": 0
