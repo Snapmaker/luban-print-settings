@@ -87,7 +87,7 @@
         "default_value": false
       },
       "constant_power_mode": {
-        "default_value": true
+        "default_value": false
       },
       "dot_with_compensation": {
         "default_value": 0
