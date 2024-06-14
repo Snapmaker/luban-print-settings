@@ -24,7 +24,7 @@
         "default_value": 0
       },
       "fixed_power": {
-        "default_value": 15
+        "default_value": 30
       },
       "fixed_power_enabled": {
         "default_value": true
@@ -96,7 +96,7 @@
         "default_value": 0
       },
       "scanning_offset": {
-        "default_value": 0
+        "default_value": 0.2
       }
     }
   }
