@@ -286,6 +286,17 @@
             "description": "Used for bi-directional filler engraving, it compensates for positioning deviations due to machine backlash.",
             "enabled": "resolveOrValue('path_type') == 'fill' and resolveOrValue('movement_mode') == 'greyscale-line'"
         },
+        "axes_type": {
+            "default_value": "xyuv",
+            "description": "",
+            "label": "Print Type",
+            "type": "enum",
+            "options": {
+                "xyuv": "XYUV",
+                "xy": "XY",
+                "uv": "UV"
+            }
+        },
         "galvo_print_field": {
             "default_value": 40,
             "label": "Galvo Print Field",
@@ -301,6 +312,17 @@
             "options": {
                 "splicing_linkage": "Splicing Linkage",
                 "continuous_linkage": "Continuous Linkage"
+            }
+        },
+        "scanning_direction": {
+            "default_value": "bidirectional",
+            "description": "",
+            "label": "Galvo Print Scanning Direction",
+            "type": "enum",
+            "options": {
+                "forward": "Forward",
+                "reverse": "Reverse",
+                "bidirectional": "Bidirectional"
             }
         },
         "start_tc": {
