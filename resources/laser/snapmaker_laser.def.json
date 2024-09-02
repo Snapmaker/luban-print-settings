@@ -305,7 +305,7 @@
             "description": ""
         },
         "galvo_print_type": {
-            "default_value": "splicing_linkage",
+            "default_value": "continuous_linkage",
             "description": "",
             "label": "Galvo Print Type",
             "type": "enum",
@@ -367,6 +367,20 @@
         "scanning_line": {
             "default_value": 0,
             "label": "Scanning Line",
+            "unit": "mm",
+            "type": "float",
+            "description": ""
+        },
+        "accel": {
+            "default_value": 1000,
+            "label": "Acceleration",
+            "unit": "mm",
+            "type": "float",
+            "description": ""
+        },
+        "accel_to_decel": {
+            "default_value": 500,
+            "label": "Acceleration To Deceleration",
             "unit": "mm",
             "type": "float",
             "description": ""
