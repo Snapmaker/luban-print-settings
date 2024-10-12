@@ -322,7 +322,8 @@
             "options": {
                 "forward": "Forward",
                 "reverse": "Reverse",
-                "bidirectional": "Bidirectional"
+                "bidirectional": "Bidirectional",
+                "xy_bidirectional": "XY Bidirectional"
             }
         },
         "test_mode": {
@@ -333,7 +334,8 @@
             "options": {
                 "uv_y_link": "UV Y Link",
                 "uv_y_no_link": "UV Y No Link",
-                "light_spot": "Light Spot"
+                "light_spot": "Light Spot",
+                "uv_count_link": "UV Count Link"
             }
         },
         "start_tc": {
@@ -360,6 +362,20 @@
         "cut_image_overlap_width": {
             "default_value": 5,
             "label": "Cut Image Overlap Width",
+            "unit": "mm",
+            "type": "float",
+            "description": ""
+        },
+        "cut_image_count": {
+            "default_value": 4,
+            "label": "Cut Image Count",
+            "unit": "mm",
+            "type": "float",
+            "description": ""
+        },
+        "y_backlash": {
+            "default_value": 0.2,
+            "label": "Y Backlash",
             "unit": "mm",
             "type": "float",
             "description": ""
