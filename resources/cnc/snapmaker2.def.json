@@ -86,6 +86,16 @@
             "label": "Stepover",
             "description": "Set the space between parallel toolpaths."
         },
+        "safety_height": {
+            "label": "Jog Height",
+            "description": "Set the distance between the tool and the material when the tool is not carving.",
+            "min": 0.1,
+            "step": 1,
+            "max": 100,
+            "default_value": 1,
+            "type": "float",
+            "unit": "mm"
+        },
         "tool_extension_enabled": {
             "default_value": false,
             "type": "enum",

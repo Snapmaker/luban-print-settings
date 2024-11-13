@@ -1,0 +1,44 @@
+{
+    "category": "Aluminium-5052",
+    "name": "Carving V-Bit 4",
+    "i18nCategory": "key-default_category-Aluminium-5052",
+    "i18nName": "key-default_name-Carving V-bit 4",
+    "inherits": "snapmaker2",
+    "version": "4.13.0",
+    "overrides": {
+        "tool_type": {
+            "default_value": "vbit"
+        },
+        "diameter": {
+            "default_value": 0.2
+        },
+        "angle": {
+            "default_value": 60
+        },
+        "shaft_diameter": {
+            "default_value": 4
+        },
+        "jog_speed": {
+            "default_value": 1500
+        },
+        "work_speed": {
+            "default_value": 200
+        },
+        "plunge_speed": {
+            "default_value": 100
+        },
+        "step_down": {
+            "default_value": 0.1
+        },
+        "step_over": {
+            "default_value": 0.1
+        },
+        "safety_height": {
+            "default_value": 2
+        },
+        "tool_extension_enabled": {
+            "default_value": false
+        }
+    },
+    "isRecommended": true
+}

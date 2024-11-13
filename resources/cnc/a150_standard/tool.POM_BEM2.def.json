@@ -1,0 +1,44 @@
+{
+    "category": "POM",
+    "name": "Ball End Mill 2",
+    "i18nCategory": "key-default_category-POM",
+    "i18nName": "",
+    "inherits": "snapmaker2",
+    "version": "4.13.0",
+    "overrides": {
+        "tool_type": {
+            "default_value": "ball"
+        },
+        "diameter": {
+            "default_value": 2
+        },
+        "angle": {
+            "default_value": 30
+        },
+        "shaft_diameter": {
+            "default_value": 4
+        },
+        "jog_speed": {
+            "default_value": 1500
+        },
+        "work_speed": {
+            "default_value": 900
+        },
+        "plunge_speed": {
+            "default_value": 200
+        },
+        "step_down": {
+            "default_value": 2
+        },
+        "step_over": {
+            "default_value": 0.5
+        },
+        "safety_height": {
+            "default_value": 2
+        },
+        "tool_extension_enabled": {
+            "default_value": false
+        }
+    },
+    "isRecommended": true
+}

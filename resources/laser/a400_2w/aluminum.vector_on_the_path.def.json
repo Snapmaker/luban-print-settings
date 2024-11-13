@@ -1,0 +1,102 @@
+{
+    "version": "4.13.0",
+    "name": "Vector on the path",
+    "category": "Aluminum",
+    "i18nName": "key-default_name-Vector on the path",
+    "i18nCategory": "Aluminum",
+    "isRecommended": true,
+    "inherits": "snapmaker2",
+    "metadata": {},
+    "overrides": {
+      "path_type": {
+        "default_value": "path"
+      },
+      "work_speed": {
+        "default_value": 4500
+      },
+      "initial_height_offset": {
+        "default_value": 0
+      },
+      "multi_passes": {
+        "default_value": 1
+      },
+      "multi_pass_depth": {
+        "default_value": 0
+      },
+      "fixed_power": {
+        "default_value": 100
+      },
+      "fixed_power_enabled": {
+        "default_value": true
+      },
+      "movement_mode": {
+        "default_value": "greyscale-line"
+      },
+      "fill_interval": {
+        "default_value": 0.2
+      },
+      "dwell_time": {
+        "default_value": 5
+      },
+      "jog_speed": {
+        "default_value": 8000
+      },
+      "direction": {
+        "default_value": "Horizontal"
+      },
+      "machine_max_feedrate_x": {
+        "default_value": 600
+      },
+      "machine_max_feedrate_y": {
+        "default_value": 200
+      },
+      "machine_max_feedrate_z": {
+        "default_value": 40
+      },
+      "machine_max_feedrate_b": {
+        "default_value": 45
+      },
+      "machine_max_acceleration_x": {
+        "default_value": 2000
+      },
+      "machine_max_acceleration_y": {
+        "default_value": 200
+      },
+      "machine_max_acceleration_z": {
+        "default_value": 500
+      },
+      "machine_max_acceleration_b": {
+        "default_value": 500
+      },
+      "machine_acceleration": {
+        "default_value": 2500
+      },
+      "machine_minimum_feedrate": {
+        "default_value": 1
+      },
+      "fixed_min_power": {
+        "default_value": 0
+      },
+      "power_level_divisions": {
+        "default_value": 255
+      },
+      "auxiliary_air_pump": {
+        "default_value": false
+      },
+      "half_diode_mode": {
+        "default_value": false
+      },
+      "constant_power_mode": {
+        "default_value": false
+      },
+      "dot_with_compensation": {
+        "default_value": 0
+      },
+      "scanning_pre_accel_ratio": {
+        "default_value": 0
+      },
+      "scanning_offset": {
+        "default_value": 0
+      }
+    }
+  }
