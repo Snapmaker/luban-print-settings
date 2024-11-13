@@ -2,7 +2,7 @@
     "category": "Carbon-Fiber",
     "name": "Ball End Mill 2",
     "i18nCategory": "key-default_category-Carbon-Fiber",
-    "i18nName": "",
+    "i18nName": "key-default_name-Ball End Mill 2",
     "inherits": "snapmaker2",
     "version": "4.13.0",
     "overrides": {
