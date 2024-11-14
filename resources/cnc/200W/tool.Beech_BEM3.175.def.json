@@ -2,7 +2,7 @@
     "category": "Beech",
     "name": "Ball End Mill 3.175",
     "i18nCategory": "key-default_category-Beech",
-    "i18nName": "",
+    "i18nName": "key-default_name-Ball End Mill",
     "inherits": "snapmaker2",
     "version": "4.13.0",
     "overrides": {

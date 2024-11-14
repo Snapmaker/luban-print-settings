@@ -2,7 +2,7 @@
     "version": "4.5.0-beta.8",
     "name": "Ball End Mill 3.175",
     "category": "Hard Wood",
-    "i18nName": "",
+    "i18nName": "key-default_name-Ball End Mill",
     "i18nCategory": "",
     "isRecommended": true,
     "inherits": "snapmaker2",
