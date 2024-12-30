@@ -5,7 +5,7 @@
     "i18nName": "key-default_name-Dot filled",
     "i18nCategory": "Copper",
     "isRecommended": true,
-    "inherits": "snapmaker2",
+    "inherits": "snapmaker_artisan",
     "metadata": {},
     "overrides": {
       "path_type": {
