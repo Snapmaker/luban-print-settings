@@ -1,9 +1,9 @@
 {
     "version": "4.14.0",
     "name": "Cutting 3.175mm",
-    "category": "Bamboo",
+    "category": "Plywood",
     "i18nName": "key-default_name-Cutting 3.175mm",
-    "i18nCategory": "key-default_category-Bamboo",
+    "i18nCategory": "key-default_category-Plywood",
     "isRecommended": false,
     "inherits": "snapmaker2",
     "metadata": {},
@@ -12,7 +12,7 @@
             "default_value": "path"
         },
         "work_speed": {
-            "default_value": 180
+            "default_value": 120
         },
         "initial_height_offset": {
             "default_value": 0
@@ -21,10 +21,10 @@
             "default_value": 1
         },
         "multi_pass_depth": {
-            "default_value": 1
+            "default_value": 0
         },
         "fixed_power": {
-            "default_value": 90
+            "default_value": 100
         },
         "fixed_power_enabled": {
             "default_value": true
@@ -33,7 +33,7 @@
             "default_value": "greyscale-line"
         },
         "fill_interval": {
-            "default_value": 0.25
+            "default_value": 0.1
         },
         "dwell_time": {
             "default_value": 5
@@ -45,10 +45,10 @@
             "default_value": "Horizontal"
         },
         "machine_max_feedrate_x": {
-            "default_value": 120
+            "default_value": 600
         },
         "machine_max_feedrate_y": {
-            "default_value": 120
+            "default_value": 200
         },
         "machine_max_feedrate_z": {
             "default_value": 40
@@ -57,22 +57,22 @@
             "default_value": 45
         },
         "machine_max_acceleration_x": {
-            "default_value": 3000
+            "default_value": 2000
         },
         "machine_max_acceleration_y": {
-            "default_value": 3000
+            "default_value": 200
         },
         "machine_max_acceleration_z": {
-            "default_value": 100
+            "default_value": 500
         },
         "machine_max_acceleration_b": {
-            "default_value": 3000
+            "default_value": 500
         },
         "machine_acceleration": {
-            "default_value": 1000
+            "default_value": 2500
         },
         "machine_minimum_feedrate": {
-            "default_value": 3
+            "default_value": 1
         },
         "fixed_min_power": {
             "default_value": 0
@@ -81,7 +81,7 @@
             "default_value": 255
         },
         "auxiliary_air_pump": {
-            "default_value": false
+            "default_value": true
         },
         "half_diode_mode": {
             "default_value": false
